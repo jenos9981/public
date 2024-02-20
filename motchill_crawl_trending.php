@@ -16,7 +16,7 @@ $MOTCHILL_DOMAIN = $objURL['scheme'] . '://' . $objURL['host'];
 
 
 /**================= MAIN ====================*/
-$html = str_get_html(fetch($url));
+$html = str_get_html(fetch($MOTCHILL_DOMAIN));
 $a_tag_elements = $html->find('#film_hot .item a');
 
 $movies = [];
