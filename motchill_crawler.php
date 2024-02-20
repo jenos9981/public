@@ -139,6 +139,8 @@ foreach ($episodeLinks as $epLink) {
 
 //Episode checksum
 $movie['episodes_checksum'] = md5(json_encode($movie['episodes']));
+//Movie checksum
+$movie['movie_checksum'] = md5(json_encode($movie));
 
 
 //Remake play link
