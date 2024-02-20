@@ -22,7 +22,7 @@ $a_tag_elements = $html->find('#film_hot .item a');
 $movies = [];
 foreach ($a_tag_elements as $key => $element) {
     $href = $element->getAttribute('href');
-    $name = $element->getAttribute('name');
+    $name = $element->getAttribute('title');
     $movie_id =  extractMovieId($MOTCHILL_DOMAIN . $href);
 
     if ($movie_id) {
